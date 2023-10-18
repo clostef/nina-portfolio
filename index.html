@@ -2,7 +2,12 @@
 <html lang="fr">
 
 <head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Nina Carducci - Photographe professionnel spécialisé dans les séances photos, la retouche d'images, et la création d'albums photos de haute qualité. Découvrez mon portfolio et réservez votre séance dès aujourd'hui.">
+	<meta property="og:type" content="website" />
+	<meta property="og:instagram" content="https://www.instagram.com/ninacarducci.photo/?hl=fr">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,13 +15,12 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
 		rel="stylesheet">
-	<meta charset="UTF-8">
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
-	<title>Nina Carducci - Photographe</title>
+	<title>Nina Carducci - Photographe / Shooting photo, Retouches et Album photos</title>
 </head>
 
 <body>
@@ -30,7 +34,8 @@
 					<li><a href="#services">Service</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-							target="_blank"><img src="assets/images/instagram.avif" alt="link-insta"></a></li>
+							target="_blank"><img src="assets/images/instagram.avif" alt="link-insta"
+								title="instagram"></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -74,7 +79,7 @@
 	<main>
 		<section id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina.avif" alt="picture-nina">
+				<img src="./assets/images/nina.avif" alt="picture-nina" title="ninacarducci">
 			</div>
 			<div id="about-me">
 				<h3 class="about-me__title">A propos de moi</h3>
@@ -99,23 +104,26 @@
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/aaron-paul.avif" alt="pic-concert" />
+						src="./assets/images/gallery/concerts/aaron-paul.avif" alt="pic-concert" title="concert" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/ali-morshedlou.avif" alt="pic-entreprise" />
+						src="./assets/images/gallery/entreprise/ali-morshedlou.avif" alt="pic-entreprise"
+						title="entreprise" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/jason-goodman.avif" alt="pic-entreprises" />
+						src="./assets/images/gallery/entreprise/jason-goodman.avif" alt="pic-entreprises"
+						title="entreprise" />
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/hannah-busing.avif" alt="pic-mariages" />
+						src="./assets/images/gallery/mariage/hannah-busing.avif" alt="pic-mariages" title="mariage" />
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/ade-tunji.avif" alt="pic-portrait" />
+						src="./assets/images/gallery/portraits/ade-tunji.avif" alt="pic-portrait" title="portrait" />
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/jakob-owens.avif" alt="pic-mariage" />
+						src="./assets/images/gallery/mariage/jakob-owens.avif" alt="pic-mariage" title="mariage" />
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/nino-van.avif" alt="pic-portraits" />
+						src="./assets/images/gallery/portraits/nino-van.avif" alt="pic-portraits" title="portrait" />
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/austin-neill.avif" alt="pic-concert" />
+						src="./assets/images/gallery/concerts/austin-neill.avif" alt="pic-concert" title="concert" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/mateus-campos.avif" alt="pic-entreprise" />
+						src="./assets/images/gallery/entreprise/mateus-campos.avif" alt="pic-entreprise"
+						title="entreprise" />
 				</div>
 			</div>
 			<div class="quote">
@@ -191,9 +199,9 @@
 				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form action="" method="post">
 					<label for="name">Nom</label>
-					<input type="text" name="name" id="name">
+					<input name="name" id="name" type="text">
 					<label for="email">Email</label>
-					<input type="email" name="email" id="email">
+					<input name="email" id="email" type="email">
 					<label for="message">Message</label>
 					<textarea name="message" id="message" cols="30" rows="10"></textarea>
 					<input type="submit" value="Envoyer" />
