@@ -15,33 +15,13 @@
 	<meta name="twitter:description"
 		content="Explorez un monde de créativité photographique avec Nina Carducci. Ses images captivent l'âme et racontent des histoires uniques." />
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="preload" href="./assets/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
+	<link rel="preload"
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-		rel="stylesheet">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
-	<script type="application/ld+json">
-			{
-			  "@context": "http://schema.org",
-			  "@type": "LocalBusiness",
-			  "name": "Ninacarducci -Photographe professionnel",
-			  "address": {
-				"@type": "PostalAddress",
-				"streetAddress": "68 avenue Alsace-Lorraine",
-				"addressLocality": "Bordeaux",
-				"postalCode": "33200",
-				"addressCountry": "FR"
-			  },
-			  "telephone": "05 56 67 78 89",
-			  "openingHours": "Mo-Fr 10:00-19:00"
-			}
-			</script>
+		as="style" onload="this.onload=null;this.rel='stylesheet'">
+
 	<title>Nina Carducci - Photographe professionnel</title>
 </head>
 
@@ -101,7 +81,7 @@
 	<main>
 		<section id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina.webp" alt="picture-nina" title="ninacarducci">
+				<img src="./assets/images/nina.webp" alt="picture-nina" loading="lazy" title="ninacarducci">
 			</div>
 			<div id="about-me">
 				<h3 class="about-me__title">A propos de moi</h3>
@@ -126,25 +106,31 @@
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/aaron-paul.webp" alt="pic-concert" title="concert" />
+						src="./assets/images/gallery/concerts/aaron-paul.webp" alt="pic-concert" loading="lazy"
+						title="concert" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="pic-entreprise"
+						src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="pic-entreprise" loading="lazy"
 						title="entreprise" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="pic-entreprises"
+						src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="pic-entreprises" loading="lazy"
 						title="entreprise" />
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/hannah-busing.webp" alt="pic-mariages" title="mariage" />
+						src="./assets/images/gallery/mariage/hannah-busing.webp" alt="pic-mariages" loading="lazy"
+						title="mariage" />
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/ade-tunji.webp" alt="pic-portrait" title="portrait" />
+						src="./assets/images/gallery/portraits/ade-tunji.webp" alt="pic-portrait" loading="lazy"
+						title="portrait" />
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/jakob-owens.webp" alt="pic-mariage" title="mariage" />
+						src="./assets/images/gallery/mariage/jakob-owens.webp" alt="pic-mariage" loading="lazy"
+						title="mariage" />
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/nino-van.webp" alt="pic-portraits" title="portrait" />
+						src="./assets/images/gallery/portraits/nino-van.webp" alt="pic-portraits" loading="lazy"
+						title="portrait" />
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/austin-neill.webp" alt="pic-concert" title="concert" />
+						src="./assets/images/gallery/concerts/austin-neill.webp" alt="pic-concert" loading="lazy"
+						title="concert" />
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/mateus-campos.webp" alt="pic-entreprise"
+						src="./assets/images/gallery/entreprise/mateus-campos.webp" alt="pic-entreprise" loading="lazy"
 						title="entreprise" />
 				</div>
 			</div>
@@ -230,10 +216,32 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/camera.webp" alt="picture-app">
+				<img src="./assets/images/camera.webp" alt="picture-app" loading="lazy">
 			</div>
 		</div>
 	</footer>
+
+	<script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script defer src="./assets/maugallery.js"></script>
+	<script async src="./assets/scripts.js"></script>
+	<script type="application/ld+json">
+			{
+			  "@context": "http://schema.org",
+			  "@type": "LocalBusiness",
+			  "name": "Ninacarducci -Photographe professionnel",
+			  "address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+			  },
+			  "telephone": "05 56 67 78 89",
+			  "openingHours": "Mo-Fr 10:00-19:00"
+			}
+			</script>
 </body>
 
 </html>
